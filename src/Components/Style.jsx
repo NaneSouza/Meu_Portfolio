@@ -24,12 +24,38 @@ text-decoration: none;
 color: white;
 border-radius:5%;
 padding: 0.5rem;
-box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
+text-shadow: 0 0 10px rgba(201, 88, 201, 0.5);
+-webkit-box-reflect: below 1px linear-gradiente(transparent, #915fd1);
+line-height: 1rem;
+outline: none;
+animation: animate 2s linear infinite;
+}
+@keyframes animate 
+{
+
+    0%,100%
+
+{
+color: #807a81;
+text-shadow: none;
+}
+18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+{
+color: white;
+text-shadow: 0 0 10px #8d3da1,
+0 0 20px #8d3da1,
+0 0 40px #8d3da1,
+0 0 80px #8d3da1,
+0 0 160px #8d3da1;
+}
+    
+
+
 }
 
 a:hover{
     color: rgba(201, 88, 201, 0.5);
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 
 
@@ -69,7 +95,7 @@ img{
     transform: scale(1.1);
     box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
     margin-bottom: 2rem;
-width: 20vw;
+width: 21vw;
 height: 45vh; 
 
 
@@ -356,6 +382,9 @@ grid-gap: 1rem;
 justify-content: center;
 background-color: black;
 padding: 2rem;
+text-align: center;
+
+
 
 img{
     /* margin: 2rem; */
@@ -386,30 +415,55 @@ justify-content: center;
 
 //---------galeria - Projetos (Dev Front-end)
 
+export const DivProj1 = styled.div`
+    border: solid 0.1rem rgba(201, 88, 201, 0.2);
+    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
+    
+
+`
+
+
+
+
 export const Fotos = styled.section`
 display: grid; 
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
 grid-gap: 1rem;
 justify-content: center;
 background-color: black;
 padding: 2rem;
-flex-direction:column;
+text-align: center;
+
+
 
 img{
     margin: 0.5rem;
-    border: solid 0.5rem rgba(201, 88, 201, 0.5);
-    width: 30vw;
+    border: solid 0.4rem rgba(201, 88, 201, 0.5);
+    width: 40vw;
     height: 55vh;
 }
 
-figcaption{
+h2{
+color: white;
+font-size: 1.0rem;
+
+}
+
+h3{
+color: white;
+font-size: 0.9rem;
+
+}
+
+
+/* figcaption{
 text-align: center;
 font-size: 1.2rem; 
 color: white; 
 display: flex;
 justify-content: center;
 
-}
+} */
 
     @media (min-width: 320px) and (max-width: 768px) { img{ 
     width: 40%;

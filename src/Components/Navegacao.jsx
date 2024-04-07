@@ -13,7 +13,6 @@ function Navegacao() {
             <BrowserRouter>
                 <S.Nav>
                     <S.Ul>
-                        {/* to = para, um link para o sobre, projetos e início. Me leve para tal lugar */}
 
                         <li> <Link to="/"> Inicio </Link>  </li>
                         <li> <Link to="/Sobre"> Sobre </Link>   </li>
