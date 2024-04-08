@@ -218,9 +218,6 @@ padding: 0.5rem;
 
 
 
-
-
-
 @media (min-width: 320px) and (max-width: 768px){ 
     height: 20vh;
     width: 50vw;
@@ -301,8 +298,6 @@ justify-content:space-evenly;
 text-align: center;
 padding: 0 1rem 0 1rem;
 
-
-  
         
     h3{
     font-size: 1rem;
@@ -403,7 +398,7 @@ flex-direction: column;
 background-image: url(${Designer});
 background-size: cover;
 background-size: no-repeat;
-/* padding: 1rem; */
+
 
 h2{
     text-shadow: 0 0 10px rgba(201, 88, 201);
@@ -457,14 +452,7 @@ export const DivProj1 = styled.div`
     box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
     margin-bottom: 1.5rem;
     
-    
-    /* @media (min-width: 320px) and (max-width: 768px) {
-  width: 100%;
-  height: auto;
-} */
-       
-
-
+  
 `
 
 
@@ -476,7 +464,7 @@ justify-content: center;
 background-color: black;
 padding: 2rem;
 text-align: center;
-/* border: solid red; */
+
 
 
 
@@ -517,20 +505,6 @@ padding: 0.6rem;
      }
      }
 
-/* img{ 
-    margin: 0.5rem; 
-    border: solid 0.4rem rgba(201, 88, 201, 0.5); }
-
-h2{ color: white; 
-    font-size: 1.0rem;
-
-}
-
-h3{ color: white; font-size: 0.9rem;
-
-} */
-
-   
 
 `
 
@@ -542,8 +516,6 @@ export const DivProj2 = styled.div`
     margin-bottom: 1.5rem;
 
 `
-
-
 
 
 export const Fotos2 = styled.section`
@@ -589,21 +561,10 @@ padding: 0.6rem;
         h2, h3 { 
             text-align: center; 
             font-size: 0.9rem; 
-            /* padding: 1rem; */
+    
         } 
     }
 
-/* img{ 
-    margin: 0.5rem; 
-    border: solid 0.4rem rgba(201, 88, 201, 0.5); }
-
-h2{ color: white; 
-    font-size: 1.0rem; 
-    padding: 0.6rem; }
-
-h3{ color: white; 
-    font-size: 0.9rem; 
-    padding: 0.6rem; } */
 
 `
 
@@ -614,7 +575,6 @@ box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
 display: flex; 
 justify-content: center; 
 align-items: center; 
-/* margin-top: 2rem; */
 
 div{
 display: flex; 

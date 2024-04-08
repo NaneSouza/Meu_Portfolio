@@ -58,14 +58,6 @@ function Galeria(){    //---------galeria - Projetos (Dev Front-end)
         </S.DivProj2> 
 
 
-
-
-
-
-
-
-
-
        <S.DivProj2>        
        <a href="https://nanesouza.github.io/ProjFinalDescodsite/" target="_blank">
        <img src={Idealize} alt="Imagem da página Inicial do Site Idealize" /> 
@@ -74,8 +66,7 @@ function Galeria(){    //---------galeria - Projetos (Dev Front-end)
         <h3>Base do desenvolvimento: HTML e CSS.</h3>
         </S.DivProj2>
 
-       
-        
+               
          <S.DivProj2> 
        <a href="https://nanesouza.github.io/LojaPet/" target="_blank">
        <img src={LojaPet1} alt="Imagem da página Inicial do Site Pet Wedding" /> 
@@ -108,8 +99,6 @@ function Galeria(){    //---------galeria - Projetos (Dev Front-end)
         <h3>Base do desenvolvimento: HTML, CSS, JavaScript, React.</h3>
         </S.DivProj2> 
 
-
-        
        
         </S.Fotos2>
     )
