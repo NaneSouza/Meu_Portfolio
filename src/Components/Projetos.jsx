@@ -15,7 +15,7 @@ import Lsvt from "./imagensPorfolio/Lsvt.png";
 import Lcaes from "./imagensPorfolio/Lcaes.png";
 import Lidealize from "./imagensPorfolio/Lidealize.png";
 import LIasdba from "./imagensPorfolio/LIasdba.png";
-import Vtp from "./imagensPorfolio/Vtp.png";
+import Turning from "./imagensPorfolio/Turning.png";
 import VABebe from "./imagensPorfolio/VABebe.png";
 import VRAvt from "./imagensPorfolio/VRAvt.png";
 import Calebe from "./imagensPorfolio/Calebe.png";
@@ -241,7 +241,7 @@ function Projetos() {
 
       <S.DivProj1>
         <a href="https://youtu.be/aLTzVa_VdUg" target="_blank">
-          <img src={Vtp} alt="Imagem de Vídeo da Mentoria Turning Point" />
+          <img src={Turning} alt="Imagem de Vídeo da Mentoria Turning Point" />
         </a>
         <h2>
           Vídeo da Mentoria Turning Point desenvolvido de forma voluntária para
