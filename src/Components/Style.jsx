@@ -57,7 +57,6 @@ a:hover{
 }
 
 
-
 @media(min-width: 320px) and (max-width: 768px){
     display: flex;
     flex-direction: column;
@@ -77,7 +76,6 @@ a:hover{
 
 
 `
-
 
 
 //----Estilização do Início
@@ -448,7 +446,6 @@ h4{
         font-size: 1.5rem;
         }
 }
-
 
 `
 
