@@ -14,9 +14,7 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 list-style: none;
-/* background-color: black; */
 
-/* background-color: rgba(201, 88, 201, 0.5); */
 
 a{
 font-size: 1.5rem;
@@ -30,6 +28,7 @@ line-height: 1rem;
 outline: none;
 animation: animate 2s linear infinite;
 }
+
 @keyframes animate 
 {
 
@@ -50,7 +49,6 @@ text-shadow: 0 0 10px #8d3da1,
 }
     
 
-
 }
 
 a:hover{
@@ -68,10 +66,12 @@ a:hover{
     /* border: solid red; */
 
     a{
-        font-size: 2rem;
+        font-size: 1rem;
     }
-
-
+    a:hover{
+    color: rgba(201, 88, 201, 0.5);
+    font-size: 1.2rem;
+}
 
 }
 
@@ -85,34 +85,71 @@ a:hover{
 export const SectionInicio = styled.section`
 height: 80vh; 
 display: flex;
-justify-content: space-evenly;
+justify-content:space-evenly;
 align-items: center;
-/* padding: 3rem; */
 background-color: black;
 
 img{
-    border-radius: 30%;
-    transform: scale(1.1);
-    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
-    margin-bottom: 2rem;
+border-radius: 30%;
+transform: scale(1.1);
+box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
+margin-bottom: 2rem;
 width: 21vw;
 height: 45vh; 
 
+}
 
+h1{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
 }
 
 h2{
     color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+h3{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 1rem 0;
 }
 
 @media(min-width: 320px) and (max-width: 768px){
+
+height:90vh;
 border: solid 0.5rem rgba(201, 88, 201, 0.498);
 display: flex;
 flex-direction: column;   
 
 img{
-    width: 50vw;
+    width: 30vw;
     margin-top: 2rem;
+}
+h1{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+h2{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+h3{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 0 1rem 0;
 }
 
 }
@@ -120,37 +157,35 @@ img{
 `
 
 export const ContainerDivs = styled.section`
+width: 50vw;
+height:50vh; 
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
-height:40vh; 
+justify-content: center;
+align-items: center;
 
 @media(min-width: 320px) and (max-width: 768px){
+height: 70vh;
 
-h2{
-    text-align: center;
-    font-size: 2rem;
-}
-
-    img{
-        width: 20vw;
-    }
 }
 `
 
 
 export const BoxInicio = styled.div`
+width: 40vw;
+height: 40vh;
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
+padding:  1rem 0 1rem 0;
+
 
 
 
 @media (min-width: 320px) and (max-width: 768px){ 
-    h2{
-         text-align: center;
-         font-size: 1rem; }
+    width: 40vw;
+    height: 20vh;
     }
 
     
@@ -158,10 +193,15 @@ align-items: center;
 
 
 export const BoxInicio2 = styled.div`
+
+width: 20vw;
+height: 20vh;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 animation: pulse 2s infinite;
+padding:  1.8rem 0 0 0;
+
 
 a {
  text-decoration: none;
@@ -185,13 +225,20 @@ padding: 0.5rem;
 
 
 @media (min-width: 320px) and (max-width: 768px){ 
+    height: 20vh;
+    width: 50vw;
+    margin: 2rem;
+
+    
     h2{
          text-align: center;
          font-size: 1rem; }
 
-         img{
-        width: 10vw;
-    }
+img{
+width: 12vw;
+height: 8%.5; 
+padding: 0.5rem;
+}
     }
 `
 
@@ -210,7 +257,7 @@ export const Sobre = styled.main`
 
 export const Estudos = styled.section`
 width: 30vw;
-height: 85vh;
+height: 95vh;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -218,11 +265,11 @@ flex-direction: column;
 border: solid 0.5rem rgba(201, 88, 201, 0.5);
 background-color: white;
 margin-bottom: 1.5rem;
-padding: 1rem;
+
 
 
 @media (min-width: 320px) and (max-width: 768px) {
-        width: 100%;
+        width: 100%;;
         height: auto;
     }
 
@@ -250,18 +297,15 @@ img{
 export const DivEstudos = styled.div`
 
 width: 30vw;
-height: 90vh;
+height: 95vh;
 display: flex;
 align-items: center;
 justify-content:space-evenly; 
 text-align: center;
-padding: 1rem;  
+padding: 0 1rem 0 1rem;
 
-@media (min-width: 320px) and (max-width: 768px) {
-            width: 100%;
-            height: auto;
-        }
-    
+
+  
         
     h3{
     font-size: 1rem;
@@ -270,22 +314,41 @@ padding: 1rem;
 } 
 
 h4{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: black;
     padding:  1rem;
+    
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+            width: 100%;
+            height: auto;
+
+
+            h3{
+    font-size: 0.8rem;
+    color: black;
+    padding:  0.5rem;
+} 
+
+h4{
+    font-size: 0.8rem;
+    color: black;
+    padding:  0.5rem;
+    
+}
+        }
 
 `
 
 export const Habilidades = styled.section`
 width: 30vw;
-height: 85vh;
+height: 95vh;
 border: solid 0.5rem rgba(201, 88, 201, 0.5);
 display: flex;
 justify-content: space-between;
 flex-direction: column;
 align-items: center;
-padding: 1rem;
 background-color: white;
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -296,7 +359,7 @@ background-color: white;
 
 div{
 width: 30vw;
-height: 70vh;
+height: 95vh;
 display: flex;
 align-items: center;
 justify-content:left;
@@ -334,7 +397,7 @@ h4{
 
 export const Profissional = styled.section`
 width: 30vw;
-height: 85vh;
+height: 95vh;
 border: solid 0.5rem rgba(201, 88, 201, 0.5);
 display: flex;
 justify-content: space-between;
@@ -343,7 +406,7 @@ flex-direction: column;
 background-image: url(${Designer});
 background-size: cover;
 background-size: no-repeat;
-padding: 1rem;
+/* padding: 1rem; */
 
 h2{
     text-shadow: 0 0 10px rgba(201, 88, 201);
@@ -357,8 +420,8 @@ h4{
 
 
 @media (min-width: 320px) and (max-width: 768px) {
-        width: 100%;
-        height: auto;
+    width: 100%;
+    height: 60vh;
     }
 
 div{
@@ -386,25 +449,108 @@ h4{
         font-size: 1.5rem;
         }
 }
-/* 
-img{
-    width: 10vw;
-    height: 22vh; 
 
-    @media (min-width: 320px) and (max-width: 768px) {
-            width: 50%;
-            height: auto;
-        }
-} */
 
 `
 
 
 //---------projetos - Projetos (Design Digital)
 
+export const DivProj1 = styled.div`
+    border: solid 0.1rem rgba(201, 88, 201, 0.2);
+    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
+    margin-bottom: 1.5rem;
+    
+    
+    /* @media (min-width: 320px) and (max-width: 768px) {
+  width: 100%;
+  height: auto;
+} */
+       
 
 
-export const Projectsect = styled.section`
+`
+
+
+export const Fotos1 = styled.section`
+display: grid; 
+grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+grid-gap: 1rem;
+justify-content: center;
+background-color: black;
+padding: 2rem;
+text-align: center;
+/* border: solid red; */
+
+
+
+img{
+    margin: 0.5rem;
+    border: solid 0.4rem rgba(201, 88, 201, 0.5);
+    width: 40vw;
+    height: 65vh;
+}
+
+h2{
+    color: white;
+font-size: 1.0rem;
+padding: 0.6rem;
+}
+
+h3{
+color: white;
+font-size: 0.9rem;
+padding: 0.6rem;
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) { 
+    flex-direction: column; 
+    width: auto; 
+    height: auto;
+    
+    img { 
+        width: 80%; 
+        height: 40%; 
+    } 
+    
+    h2, h3 { 
+        text-align: center; 
+        font-size: 1rem;
+        /* padding: 1rem; */
+     }
+     }
+
+/* img{ 
+    margin: 0.5rem; 
+    border: solid 0.4rem rgba(201, 88, 201, 0.5); }
+
+h2{ color: white; 
+    font-size: 1.0rem;
+
+}
+
+h3{ color: white; font-size: 0.9rem;
+
+} */
+
+   
+
+`
+
+//---------galeria - Projetos (Dev Front-end)
+
+export const DivProj2 = styled.div`
+    border: solid 0.1rem rgba(201, 88, 201, 0.2);
+    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
+    margin-bottom: 1.5rem;
+
+`
+
+
+
+
+export const Fotos2 = styled.section`
 display: grid; 
 grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
 grid-gap: 1rem;
@@ -419,109 +565,113 @@ img{
     margin: 0.5rem;
     border: solid 0.4rem rgba(201, 88, 201, 0.5);
     width: 40vw;
-    height: 55vh;
-}
-
-h2{
-color: white;
-font-size: 1.0rem;
-
-}
-
-h3{
-color: white;
-font-size: 0.9rem;
-
-}
-
-
-    @media (min-width: 320px) and (max-width: 768px) { img{ 
-    width: 40%;
-    /* height: 10vh; */
-    }
-}
-
-`
-export const DivProj2 = styled.div`
-    border: solid 0.1rem rgba(201, 88, 201, 0.2);
-    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
-    margin-bottom: 1.5rem;
-
-`
-//---------galeria - Projetos (Dev Front-end)
-
-export const DivProj1 = styled.div`
-    border: solid 0.1rem rgba(201, 88, 201, 0.2);
-    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
-    margin-bottom: 1.5rem;
-
-`
-
-
-
-
-export const Fotos = styled.section`
-display: grid; 
-grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
-grid-gap: 1rem;
-justify-content: center;
-background-color: black;
-padding: 2rem;
-text-align: center;
-
-
-
-img{
-    margin: 0.5rem;
-    border: solid 0.4rem rgba(201, 88, 201, 0.5);
-    width: 35vw;
     height: 65vh;
 }
 
 h2{
 color: white;
 font-size: 1.0rem;
-
+padding: 0.6rem;
 }
 
 h3{
 color: white;
 font-size: 0.9rem;
-
+padding: 0.6rem;
 }
 
-
-    @media (min-width: 320px) and (max-width: 768px) { img{ 
-    width: 40%;
-    /* height: 10vh; */
+@media (min-width: 320px) and (max-width: 768px) { 
+    flex-direction: column; 
+    width: auto; 
+    height: auto;
+    
+    img { 
+        width: 80%; 
+        height: 40%
+    } 
+        
+        h2, h3 { 
+            text-align: center; 
+            font-size: 0.9rem; 
+            /* padding: 1rem; */
+        } 
     }
-}
+
+/* img{ 
+    margin: 0.5rem; 
+    border: solid 0.4rem rgba(201, 88, 201, 0.5); }
+
+h2{ color: white; 
+    font-size: 1.0rem; 
+    padding: 0.6rem; }
+
+h3{ color: white; 
+    font-size: 0.9rem; 
+    padding: 0.6rem; } */
 
 `
 
 export const Secfooter = styled.footer` 
 background-color: black; 
 color: white; 
+box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
 display: flex; 
 justify-content: center; 
 align-items: center; 
-padding: 1rem; 
-box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
 /* margin-top: 2rem; */
+
+div{
+display: flex; 
+justify-content: center; 
+align-items: center; 
+flex-direction: column;
+padding: 1rem; 
+
+}
+
 
 h2{
     font-size: 1rem;
     color: white;
     padding: 0.5rem;
 }
+
+h3{
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem;
+}
+
+img{
+    margin: 0.5rem;
+    width: 4vw;
+    height: 8vh;
+}
+
 @media (min-width: 320px) and (max-width: 768px){ 
     flex-direction: column; 
     border: solid 0.5rem rgba(201, 88, 201, 0.6);
     
-    h2{ 
-    font-size: 1rem; 
+   
+h2{
+    font-size: 1rem;
+    color: white;
     text-align: center; 
-} 
+    padding: 0.5rem;
+}
+
+h3{
+    font-size: 1rem;
+    color: white;
+    text-align: center; 
+    padding: 0.5rem;
+}
+
+img{
+    margin: 0.5rem;
+    width: 10vw;
+    height: 8vh;
+}
 } 
 
 

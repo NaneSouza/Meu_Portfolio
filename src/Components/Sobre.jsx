@@ -8,6 +8,10 @@ import Reactlogo from "./imagensPorfolio/react.png"
 import UFMS from "./imagensPorfolio/logoUFMS.png"
 import ElasTech from "./imagensPorfolio/Elas na Tech.png"
 import Descod from "./imagensPorfolio/descod.jpeg"
+import Citi from "./imagensPorfolio/citinova.png"
+import Photoshop from "./imagensPorfolio/Photoshop.png"
+import Illustrator from "./imagensPorfolio/Illustrator.png"
+import Canva from "./imagensPorfolio/Canva.png"
 import * as S from "./Style.jsx"
 
 function Sobre() {
@@ -17,9 +21,15 @@ function Sobre() {
             <S.Estudos>
                 <h2> ESTUDOS</h2>
 
+                <S.DivEstudos>
+                <h3>Marketing Digital (EAD)</h3>
+                    <h4>FEV/2023 - JUL/2023</h4>
+
+                    <img src={Citi} alt="logo do Programa Citinova" />
+                </S.DivEstudos>
 
                 <S.DivEstudos>
-                <h3>Desenvolvimento front-end e back-end</h3>
+                <h3>Programação em TI</h3>
                     <h4>JUN/2023 - OUT/2023</h4>
 
                     <img src={ElasTech} alt="logo do Programa Elas na Tech" />
@@ -81,6 +91,21 @@ function Sobre() {
                 <div>
                     <img src={Styledlogo} alt="logo do styled-components" />
                     <h4>Styled-Components</h4>
+                </div>
+
+                <div>
+                    <img src={Photoshop} alt="logo do Photoshop" />
+                    <h4>Photoshop</h4>
+                </div>
+
+                <div>
+                    <img src={Illustrator} alt="logo do Adobe Illustrator" />
+                    <h4>Adobe Illustrator</h4>
+                </div>
+
+                <div>
+                    <img src={Canva} alt="logo do Canva" />
+                    <h4>Canva</h4>
                 </div>
 
             </S.Habilidades>

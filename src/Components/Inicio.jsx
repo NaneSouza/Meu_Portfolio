@@ -12,11 +12,13 @@ function Inicio() {
             <img src={Perfil} alt="Foto do perfil" />
 
             <S.ContainerDivs> 
+
                 <S.BoxInicio>
-                    <h2> Olá, tudo bem?</h2>
+                    <h3> Olá, tudo bem?</h3>
                     <h2>Aqui é a Elaine Souza (Nane)</h2>
-                    <h2>Bem-vindos ao meu portfólio.</h2>
+                    <h1>Bem-vindos ao meu portfólio!</h1>
                 </S.BoxInicio>
+
                 <S.BoxInicio2>
                 
                 <a href="https://www.instagram.com/elainesouza.19/" target="_blank">

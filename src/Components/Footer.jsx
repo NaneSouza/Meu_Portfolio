@@ -1,4 +1,5 @@
 import React from "react"
+import Vnw from "./imagensPorfolio/vnw.png"
 import * as S from "./Style.jsx"
 
 
@@ -7,7 +8,11 @@ function Footer(){
     return(
        
     <S.Secfooter>
-    <h2>Site criado por Elaine Souza - Projeto Final do Módulo II do Curso Vai na Web. Abril de 2024.</h2>
+    <div>
+    <h2>© Abril, 2024. Site criado pela aluna Elaine Souza.</h2>
+    <h3>Projeto Final do Módulo II do Curso Desenvolvimento Front-end Vai na Web.</h3>
+    </div>
+    <img src={Vnw} alt="logo do vai na web" />
     </S.Secfooter>  
    
     )
