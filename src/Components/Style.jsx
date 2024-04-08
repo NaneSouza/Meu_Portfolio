@@ -554,13 +554,13 @@ padding: 0.6rem;
     height: auto;
     
     img { 
-        width: 80%; 
-        height: 40%
+     width: 80%; 
+     height: 40%
     } 
         
-        h2, h3 { 
-            text-align: center; 
-            font-size: 0.9rem; 
+    h2, h3 { 
+     text-align: center; 
+     font-size: 0.9rem; 
     
         } 
     }
