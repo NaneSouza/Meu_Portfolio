@@ -6,6 +6,8 @@ import Html from "./imagensPorfolio/html.png"
 import Styledlogo from "./imagensPorfolio/styled.png"
 import Reactlogo from "./imagensPorfolio/react.png"
 import UFMS from "./imagensPorfolio/logoUFMS.png"
+import ElasTech from "./imagensPorfolio/Elas na Tech.png"
+import Descod from "./imagensPorfolio/descod.jpeg"
 import * as S from "./Style.jsx"
 
 function Sobre() {
@@ -15,21 +17,39 @@ function Sobre() {
             <S.Estudos>
                 <h2> ESTUDOS</h2>
 
-                <div>
+
+                <S.DivEstudos>
+                <h3>Desenvolvimento front-end e back-end</h3>
+                    <h4>JUN/2023 - OUT/2023</h4>
+
+                    <img src={ElasTech} alt="logo do Programa Elas na Tech" />
+                </S.DivEstudos>
+
+
+                <S.DivEstudos>
                     <h3>Desenvolvimento front-end</h3>
-                    <h4>AGO/2023 - MAIO/2024</h4>
+                    <h4>AGO/2023 - MAI/2024</h4>
 
                     <img src={Vnw} alt="logo do vai na web" />
-                </div>
+                </S.DivEstudos>
 
                 
 
-                <div>
+                <S.DivEstudos>
+                    <h3>Desenvolvimento front-end e back-end</h3>
+                    <h4>AGO/2023 - AGO/2025</h4>
+
+                    <img src={Descod} alt="logo do Programa Descodificadas" />
+                </S.DivEstudos>
+
+                
+
+                <S.DivEstudos>
                     <h3>Acadêmica de Tecnologia em Gestão de Mídias Sociais Digitais (EAD)</h3>
                     <h4>MAR/2024 - DEZ/2025</h4>
 
                     <img src={UFMS} alt="logo da UFMS" />
-                </div>
+                </S.DivEstudos>
 
                 
 

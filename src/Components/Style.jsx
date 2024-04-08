@@ -106,7 +106,7 @@ h2{
 }
 
 @media(min-width: 320px) and (max-width: 768px){
-border: solid 0.5rem rgba(201, 88, 201, 0.5);
+border: solid 0.5rem rgba(201, 88, 201, 0.498);
 display: flex;
 flex-direction: column;   
 
@@ -210,14 +210,16 @@ export const Sobre = styled.main`
 
 export const Estudos = styled.section`
 width: 30vw;
-height: 70vh;
+height: 85vh;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 flex-direction: column;
 border: solid 0.5rem rgba(201, 88, 201, 0.5);
-padding: 1rem;
 background-color: white;
+margin-bottom: 1.5rem;
+padding: 1rem;
+
 
 @media (min-width: 320px) and (max-width: 768px) {
         width: 100%;
@@ -225,23 +227,16 @@ background-color: white;
     }
 
 
-div{
-width: 30vw;
-height: 70vh;
-/* display: flex;
-align-items: center;
-justify-content:space-evenly; */
-padding: 1rem;
+    h2{
+    text-shadow: 0 0 10px rgba(201, 88, 201);
 
-@media (min-width: 320px) and (max-width: 768px) {
-            width: 100%;
-            height: auto;
-        }
 }
+
 
 img{
     width: 6vw;
     height: 10vh;
+    padding:  0.5rem;
 
     @media (min-width: 320px) and (max-width: 768px) {
             width: 25%;
@@ -249,23 +244,42 @@ img{
         }
 }
 
-/* h3{
-    font-size: 0,5rem;
-    color: black;
-} */
-
-/* h4{
-    font-size: 0,2rem;
-    color: black;
-} */
-
 
 `
 
+export const DivEstudos = styled.div`
+
+width: 30vw;
+height: 90vh;
+display: flex;
+align-items: center;
+justify-content:space-evenly; 
+text-align: center;
+padding: 1rem;  
+
+@media (min-width: 320px) and (max-width: 768px) {
+            width: 100%;
+            height: auto;
+        }
+    
+        
+    h3{
+    font-size: 1rem;
+    color: black;
+    padding:  1rem;
+} 
+
+h4{
+    font-size: 0.7rem;
+    color: black;
+    padding:  1rem;
+}
+
+`
 
 export const Habilidades = styled.section`
 width: 30vw;
-height: 70vh;
+height: 85vh;
 border: solid 0.5rem rgba(201, 88, 201, 0.5);
 display: flex;
 justify-content: space-between;
@@ -306,6 +320,10 @@ img{
         }
 }
 
+h2{
+    text-shadow: 0 0 10px rgba(201, 88, 201);
+
+}
 h4{
     font-size: 1rem;
     color: black;
@@ -316,7 +334,7 @@ h4{
 
 export const Profissional = styled.section`
 width: 30vw;
-height: 70vh;
+height: 85vh;
 border: solid 0.5rem rgba(201, 88, 201, 0.5);
 display: flex;
 justify-content: space-between;
@@ -326,6 +344,17 @@ background-image: url(${Designer});
 background-size: cover;
 background-size: no-repeat;
 padding: 1rem;
+
+h2{
+    text-shadow: 0 0 10px rgba(201, 88, 201);
+
+}
+
+h4{
+    text-shadow: 0 0 10px rgba(201, 88, 201);
+
+}
+
 
 @media (min-width: 320px) and (max-width: 768px) {
         width: 100%;
@@ -377,56 +406,6 @@ img{
 
 export const Projectsect = styled.section`
 display: grid; 
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-grid-gap: 1rem;
-justify-content: center;
-background-color: black;
-padding: 2rem;
-text-align: center;
-
-
-
-img{
-    /* margin: 2rem; */
-    border: solid 0.5rem rgba(201, 88, 201, 0.5);
-    width: 30vw;
-    height: 55vh;
-    padding: 0.5rem;
-}
-
-figcaption{
-text-align: center;
-font-size: 1.2rem; 
-color: white; 
-display: flex;
-justify-content: center;
-
-}
-
-    @media (min-width: 320px) and (max-width: 768px){ 
-    
-    img{ 
-    width: 40%;
-    /* height: 10vh; */
-    }
-}
-
-`
-
-//---------galeria - Projetos (Dev Front-end)
-
-export const DivProj1 = styled.div`
-    border: solid 0.1rem rgba(201, 88, 201, 0.2);
-    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
-    
-
-`
-
-
-
-
-export const Fotos = styled.section`
-display: grid; 
 grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
 grid-gap: 1rem;
 justify-content: center;
@@ -456,14 +435,61 @@ font-size: 0.9rem;
 }
 
 
-/* figcaption{
-text-align: center;
-font-size: 1.2rem; 
-color: white; 
-display: flex;
-justify-content: center;
+    @media (min-width: 320px) and (max-width: 768px) { img{ 
+    width: 40%;
+    /* height: 10vh; */
+    }
+}
 
-} */
+`
+export const DivProj2 = styled.div`
+    border: solid 0.1rem rgba(201, 88, 201, 0.2);
+    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
+    margin-bottom: 1.5rem;
+
+`
+//---------galeria - Projetos (Dev Front-end)
+
+export const DivProj1 = styled.div`
+    border: solid 0.1rem rgba(201, 88, 201, 0.2);
+    box-shadow: 0 0 2rem rgba(201, 88, 201, 0.5);
+    margin-bottom: 1.5rem;
+
+`
+
+
+
+
+export const Fotos = styled.section`
+display: grid; 
+grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+grid-gap: 1rem;
+justify-content: center;
+background-color: black;
+padding: 2rem;
+text-align: center;
+
+
+
+img{
+    margin: 0.5rem;
+    border: solid 0.4rem rgba(201, 88, 201, 0.5);
+    width: 35vw;
+    height: 65vh;
+}
+
+h2{
+color: white;
+font-size: 1.0rem;
+
+}
+
+h3{
+color: white;
+font-size: 0.9rem;
+
+}
+
 
     @media (min-width: 320px) and (max-width: 768px) { img{ 
     width: 40%;
